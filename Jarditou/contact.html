@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head><!--début de l'entête ajout de bootsraps-->
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+      <link rel="stylesheet" href="ASSETS/CSS/style.css">
+    <title>Jarditou Contact</title><!--Titre de la page-->
+  </head><!--Fin de l'entête-->
+
+ <body><!--Début du Body-->
+
+    <header><!--début du header-->
+      <div class="logo"> <!--Début de div classe logo--> 
+        <div class="piclogo"><!--début de div classe piclogo-->
+          <a href="index.html"><img class="promo" src="ASSETS/img/jarditou_logo.jpg" alt="logo" title="logo"></a>
+          <small>La qualité depuis 70 ans</small>
+        </div><!--fin de div piglogo-->
+      
+        <div class="titre">Tout le jardin</div><!--Début et fin du div logo-->  
+          
+      </div><!--fin de div Logo-->
+
+        <nav>
+          <ul class="menu"><!--début de la balise ul-->
+            <li><a href="index.html" style="color:rgb(255, 255, 255)">Acceuil</a></li>
+            <li><a href="tableau.html" style="color:white">Tableau</a></li>
+            <li><a href="contact.html" style="color:white">Contact</a></li>
+          </ul>
+        </nav>
+
+          
+        <img src="ASSETS/img/promotion.jpg"  class="image" alt="toto"><!--Image promotion.jpg -->
+
+      
+    </header><!--Fin du header-->
+<div class="position"> <!--Début de div position-->
+  <div class="gauche"><!--début de div gauche-->
+    <h1><b>Contact</b></h1> <!--Début du formulaire de contact-->
+    <p><i><small>* Ces zones sont obligatoires</small></i></p>
+    <form action="/ma-page-de-traitement" method="post">
+
+      
+      <small>Vos coordonées</small>
+      <div>      
+          <label for="name">Votre nom* :</label>
+          <input type="text" id="nom" name="user_name">
+      </div>
+      <div>
+        <label for="name">Votre prénom* :</label>
+        <input type="text" id="prenom" name="user_name">
+      </div>    
+      <div>
+        <label for="sexe">Sexe*:</label>
+      <input type="radio" id="Masculin" name="user" value="Masculin">
+      <label for="Masculin"> Masculin </label>
+     <input type="radio" id="Feminin" name="user" value="Féminin"> 
+     <label for="Feminin">Féminin</label>
+  </div>
+      <div>
+          <label for="mail">Date de naissance*:</label>
+          <input type="date" id="date" name="user_date">
+      </div>
+      <div>
+        <label for="mail">Code postal*:</label>
+        <input type="text" id="text" name="user_text">
+    </div>
+    <div>
+      <label for="mail" >Adresse:</label>
+      <input type="text" id="adr" name="user_adr">
+  </div>
+  <div>
+    <label for="mail">Ville:</label>
+    <input type="text" id="ville" name="user_ville">
+</div>
+<div>
+  <label for="mail">Email*:</label>
+  <input type="text" id="mail" placeholder="totodutoto@mail.fr" name="user_mail">
+</div>
+ 
+  
+  </form>
+  <form action="/ma-page-de-traitement" method="post">
+    <fieldset>
+    <small>Votre demande</small>
+    <label for="couleur">Sujet*</label>
+    <select id="couleur"> 
+    <option value="Veuillez sélectioner un sujet" selected>Veuillez sélectionner un sujet</option>
+    <option value="Commande">Mes commandes</option>
+    <option value="Qproduit">Question sur un produit</option>
+    <option value="Reclamation">Réclamation</option>
+    <option value="Autre">Autres</option>
+</select>
+<p></p>
+  <div>
+    <label for="msg">Votre question :</label>
+    <textarea id="question" name="user_question"></textarea>
+</div>
+<p></p>
+</fieldset>
+</form>
+  
+<input type="checkbox" required><p>* J'accepte le traitement informatique de ce formulaire</p>
+<input type="submit" value="Envoyer">
+<input type="submit" value="Annuler">
+</div><!--fin de div gauche-->
+
+  <div class="droite"><!--Début de Div droite-->
+    <aside><!-- début de la balise aside -->
+      <h2>Colonne de Droite</h2>
+      <p>.</p>
+      <h2>.</h2>
+      <p>.</p>
+     <h2>.</h2>
+     <p>.</p>
+  </aside><!-- fin de la balise aside -->
+ </div><!--fin de div droite-->
+
+</div><!--fin de la div position-->
+
+
+<footer class="pied"> <!--début de la balise du footer-->
+  <nav>
+    <ul class="menu"> <!--début de ul menu-->
+        <li><a href="Menleg.html" style="color:white">Mentions légales</a></li>
+        <li><a href="Horaires.html" style="color:white">Horaires</a></li>
+        <li><a href="Plansite.html" style="color:white">Plan du site</a></li>
+   </ul><!--fin de ul menu-->
+  </nav>
+  </footer><!--fin de la balise du footer-->
+</body>
+</html>
