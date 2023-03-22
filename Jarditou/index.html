@@ -1,84 +1,153 @@
 <!DOCTYPE html>
 <html lang="fr"><!--Début de l'html configuration du langage en FR-->
 
-  <head><!--début de l'entête ajout de bootsraps-->
-    <meta charset="utf-8">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="ASSETS/CSS/style.css">
-    <title>Jarditou Index</title><!--Titre de la page-->
-  </head><!--Fin de l'entête-->
-
-  <body><!--Début du Body-->
-
-    <header><!--début du header-->
-      <div class="logo"> <!--Début de div classe logo--> 
-        <div class="piclogo"><!--début de div classe piclogo-->
-          <a href="index.html"><img class="promo" src="ASSETS/img/jarditou_logo.jpg" alt="logo" title="logo"></a>
-          <small>La qualité depuis 70 ans</small>
-        </div><!--fin de div piglogo-->
+<head><!--début de l'entête ajout de bootsraps-->
+  <meta charset="utf-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="ASSETS/CSS/style.css">
+  <title>Jarditou Index</title><!--Titre de la page-->
+<title>JAVASCRIPT</title>
+    <!-- JAVASCRIPT entre les 2 balises script dans le <head> :-->
+      <!-- Phase 5<script>var nom=window.prompt("veuillez mettre votre nom");
+         var prenom=window.prompt("veuillez mettre votre prénom");
+         alert("Votre prénom : " + prenom + "\n" + "Votre nom : " + nom);
+      </script>
+      <script>
+        var user1=window.prompt("Veuillez marquer un nombre ")
+        user1=parseInt(user1);
+        var user2=window.prompt("Veuillez marquer un nombre ")
+        user2=parseInt(user2);
+        var result= user1 + user2;
+        alert("Le résultat est : " + result);
+      </script>
+      <script>
+        var C=window.prompt("Veuillez saisir une température en Celsius");
+        var F=(C*9/5);
+        alert("La température indiqué est de : " + C + "\n" + "La conversion en Fahrenheint est de : " + F);
+      </script> Phase 5 js-->
       
-        <div class="titre">Tout le jardin</div><!--Début et fin du div logo-->  
-        
-      </div><!--fin de div Logo-->
+      <!-- Phase 6<script>
+       alert("Ceci est une chaîne de caractères : ");
+       let a =100;
+        alert("Ceci est une chaîne de caractères : " + a);
+       let b = a;
+       b--;
+        alert("Ceci est une chaîne de caractères : " + b);
+       let c= a + 1.00;
+       alert("Ceci est une chaîne de caractères : " + c); 
+       let d=true;
+        alert("resultat : " + !d);
+      </script> Phase6-->
 
-        <nav>
-          <ul class="menu"><!--début de la balise ul-->
-            <li><a href="index.html" style="color:rgb(255, 255, 255)">Acceuil</a></li>
-            <li><a href="tableau.html" style="color:white">Tableau</a></li>
-            <li><a href="contact.html" style="color:white">Contact</a></li>
-          </ul>
-        </nav>
+      <!-- Phase 7 Exercice 1<script>
+        var user=window.prompt("Mettez un nombre")
+        if(user%2==0)
+        {
+          alert("C'est pair !")
+        }
+        else
+        {
+          alert("C'est impair !")
+        }
+      </script>-->
 
-          <img src="ASSETS/img/promotion.jpg"  class="image" alt="toto"><!--Image promotion.jpg -->
+      <script>
+        var annee=window.prompt("Saisissez votre année de naissance : ");
+        var latedate=new Date();
+        var age= latedate.getFullYear() - annee;
+        age=parseInt(age);
+        if (age >=18)
+        {
+          alert("Vous avez " + age + " ans" + "\n" +"Vous êtes Majeur !");
+        }
+        else
+        {
+          alert("Vous avez " + age + " ans" + "\n" +"Vous êtes Mineur !");
+        }
+      </script>
       
-    </header><!--Fin du header-->
 
-    <div class="position"> <!--Début de div position-->
+</head><!--Fin de l'entête-->
 
-       <div class="gauche"><!--début de div gauche-->
-            <h1><b>Acceuil</b></h1>
-            <!--<article > Début d'article-->
-            <hr>
-              <b>L'entreprise</b>
-              <p><i><small>Notre entreprise familiale met tout son savoir-faire pour faire à votre disposition dans le domaine du jardin et du paysagisme.</small></i></p>
-              <p><i><small>Créée il y a 70 ans, notre entreprise vend fleurs arbustes,matériel à main et motorisé.</small></i></p>
-              <p><i><small>Implanté à Amiens, nous intervenons dans tout le déplacement de la Somme: Albert, Doullens, Péronne, Abbeville, Corbie.</small></i></p>
 
-              <b>Qualité</b>
-              <p><i><small>Nous mettons à votre disposition un service personnalisé, avec 1 seul interlocuteur durant tout votre projet.</small></i></p>
-              <p><i><small>Vous serez séduit par notre expertise, nos compétences et notre sérieux.</small></i></p>
 
-              <b>Devis Gratuit</b><p></p>
-              <i><small>Vous pouvez bien sûr contacter pour de plus amples informations ou pour une demande d'intervention.
-                Vous souhaitez un devis ? Nous vous le réalisons gratuitement.</small></i>
-            <hr>  
-          <!--</article>Fin d'article-->
-       </div><!--fin de div gauche-->
+<body><!--Début du Body-->
 
-       <div class="droite"><!--Début de Div droite-->
-        <aside><!-- début de la balise aside -->
-          <h2>Colonne de droite</h2>
-          <p>. </p>
-          <h2>. </h2>
-          <p> .</p>
-          <h2>. </h2>
-          <p> .</p>
-        </aside><!-- fin de la balise aside -->
-       </div><!--fin de div droite-->
-    </div><!--fin de la div position-->
+  <header><!--début du header-->
+    <div class="logo"> <!--Début de div classe logo-->
+      <div class="piclogo"><!--début de div classe piclogo-->
+        <a href="index.html"><img class="promo" src="ASSETS/img/jarditou_logo.jpg" alt="logo" title="logo"></a>
+        <small>La qualité depuis 70 ans</small>
+      </div><!--fin de div piglogo-->
 
-          <footer class="pied"> <!--début de la balise du footer-->
-          <nav>
-            <ul class="menu"> <!--début de ul menu-->
-              <!--<font size="4">-->
-                <li><a href="Menleg.html" style="color:white">Mentions légales</a></li>
-                <li><a href="Horaires.html" style="color:white">Horaires</a></li>
-                <li><a href="Plansite.html" style="color:white">Plan du site</a></li>
-              <!--</font>-->
-           </ul><!--fin de ul menu-->
-          </nav>
-          </footer><!--fin de la balise du footer-->
- 
-  </body><!--fin de body-->
+      <div class="titre">Tout le jardin</div><!--Début et fin du div logo-->
+
+    </div><!--fin de div Logo-->
+
+    <nav>
+      <ul class="menu"><!--début de la balise ul-->
+        <li><a href="index.html" class="couleurmenu">Acceuil</a></li>
+        <li><a href="tableau.html" class="couleurmenu">Tableau</a></li>
+        <li><a href="contact.html" class="couleurmenu">Contact</a></li>
+      </ul>
+    </nav>
+
+    <img src="ASSETS/img/promotion.jpg" class="image" alt="toto"><!--Image promotion.jpg -->
+
+  </header><!--Fin du header-->
+
+  <div class="position"> <!--Début de div position-->
+
+    <div class="gauche"><!--début de div gauche-->
+      <h1><b>Acceuil</b></h1>
+      <!--<article > Début d'article-->
+      <hr>
+      <b>L'entreprise</b>
+      <p><i><small>Notre entreprise familiale met tout son savoir-faire pour faire à votre disposition dans le domaine
+            du jardin et du paysagisme.</small></i></p>
+      <p><i><small>Créée il y a 70 ans, notre entreprise vend fleurs arbustes,matériel à main et motorisé.</small></i>
+      </p>
+      <p><i><small>Implanté à Amiens, nous intervenons dans tout le déplacement de la Somme: Albert, Doullens, Péronne,
+            Abbeville, Corbie.</small></i></p>
+
+      <b>Qualité</b>
+      <p><i><small>Nous mettons à votre disposition un service personnalisé, avec 1 seul interlocuteur durant tout votre
+            projet.</small></i></p>
+      <p><i><small>Vous serez séduit par notre expertise, nos compétences et notre sérieux.</small></i></p>
+
+      <b>Devis Gratuit</b>
+      <p></p>
+      <i><small>Vous pouvez bien sûr contacter pour de plus amples informations ou pour une demande d'intervention.
+          Vous souhaitez un devis ? Nous vous le réalisons gratuitement.</small></i>
+      <hr>
+      <!--</article>Fin d'article-->
+    </div><!--fin de div gauche-->
+
+    <div class="droite"><!--Début de Div droite-->
+      <aside><!-- début de la balise aside -->
+        <h2>Colonne de droite</h2>
+        <p>. </p>
+        <h2>. </h2>
+        <p> .</p>
+        <h2>. </h2>
+        <p> .</p>
+      </aside><!-- fin de la balise aside -->
+    </div><!--fin de div droite-->
+  </div><!--fin de la div position-->
+
+  <footer class="pied"> <!--début de la balise du footer-->
+    <nav>
+      <ul class="menu"> <!--début de ul menu-->
+        <!--<font size="4">-->
+        <li><a href="Menleg.html" class="couleurmenu">Mentions légales</a></li>
+        <li><a href="Horaires.html" class="couleurmenu">Horaires</a></li>
+        <li><a href="Plansite.html" class="couleurmenu">Plan du site</a></li>
+        <!--</font>-->
+      </ul><!--fin de ul menu-->
+    </nav>
+  </footer><!--fin de la balise du footer-->
+
+</body><!--fin de body-->
+
 </html><!--fin de html-->

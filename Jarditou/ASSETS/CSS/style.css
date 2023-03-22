@@ -119,6 +119,7 @@ a {
 a {
    /* couleur par défaut des liens */
    color: white;
+
 }
 
 /* logo */
@@ -184,10 +185,10 @@ a:hover {
    color: rgb(241, 9, 9);
 }
 
-a:visited {
-   /* couleur des liens déjà visité */
+/* a:visited {
+   couleur des liens déjà visité 
    color: grey;
-}
+}*/
 
 /* largeur maximum des images  */
 img {
@@ -204,17 +205,33 @@ img {
 .menu li {
    display: inline;
    list-style: none;
+   color:white;
 }
 
-
+td img
+{
+   height: 100px;
+   width: 50px;
+   width: auto;
+   
+}
 /* épaisseur couleur des bordures du tableau */
 table,
 tr,
 td,
 th {
    border: 1px solid #000000;
+   text-align: center;
 }
 
 .imgtd {
    width: 100px;
+}
+.couleurmenu{
+   color:white;
+}
+table
+{
+   background: red;
+   margin: auto;
 }
