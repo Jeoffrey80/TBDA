@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-   <script>
-    var nbnom=1;
-    var prenom=window.prompt("Saisissez le prénom N°1" + "\n" + "ou Clic sur Annuler pour arrêter le saisie");
-    for (i=0; prenom !="" ; i ++)
-    {
-    window.prompt("Saisissez le prénom N°" + nbnom + "\n" + "ou Clic sur Annuler pour arrêter le saisie");
-    nbnom ++;
-    }
-    alert("Le nombre de prénom est : " + nbnom)
-   </script> 
+    <script>
+        var nbnom = 0;
+        var prenom = window.prompt("Saisissez le prénom n°" + nbnom + "\n" + "ou Clic sur Annuler pour arrêter la saisie");
+        for (i = 0; prenom !=""; i++) {
+           nbnom++;
+           window.prompt("Saisissez le prénom N°" + nbnom + "\n" + "ou Clic sur Annuler pour arrêter la saisie");
+           prenom --;
+        }
+        alert("Le nombre de prénom est : " + nbnom);
+    </script>
 </body>
+
 </html>
