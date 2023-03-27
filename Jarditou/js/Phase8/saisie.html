@@ -10,14 +10,16 @@
 
 <body>
     <script>
-        var nbnom = 0;
-        var prenom = window.prompt("Saisissez le prénom n°" + nbnom + "\n" + "ou Clic sur Annuler pour arrêter la saisie");
-        for (i = 0; prenom !=""; i++) {
-           nbnom++;
-           window.prompt("Saisissez le prénom N°" + nbnom + "\n" + "ou Clic sur Annuler pour arrêter la saisie");
-           prenom --;
-        }
-        alert("Le nombre de prénom est : " + nbnom);
+            var nbnom=0;
+            do
+            {   
+                nbnom++;
+                var prenom=window.prompt("Saisissez le prénom n°" + nbnom + "\n" + "ou Clic sur Annuler pour arrêter la saisie");
+                nbnom=parseInt(nbnom);
+                var i=prenom;
+            }while(i!=false);
+            nbnom --;
+            alert("Le nombre de prénom est : " + nbnom);
     </script>
 </body>
 
