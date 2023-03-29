@@ -15,11 +15,12 @@
 
         // Demander à l'utilisateur de saisir la valeur de N
         let n = parseInt(prompt("Entrez un nombre entier pour N :"));
-
+        let a=0;
         // Afficher les N premiers multiples de X
         for (let i = 1; i <= n; i++) {
+            a++;
             let multiple = x * i;
-            document.write(n + " x " + i + " = " + multiple + "<br>");
+            document.write(a + " x " + x + " = " + multiple + "<br>");
         }
 
     </script>
