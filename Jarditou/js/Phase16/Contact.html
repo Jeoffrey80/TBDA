@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="votre-page-de-traitement.php">
+        <label for="societe">Société :</label>
+        <input type="text" id="societe" name="societe" required minlength="1">
+        <br>
+        <label for="personne">Personne à contacter :</label>
+        <input type="text" id="personne" name="personne" required minlength="1">
+        <br>
+        <label for="codepostal">Code postal :</label>
+        <input type="text" id="codepostal" name="codepostal" pattern="[0-9]{5}" required>
+        <br>
+        <label for="ville">Ville :</label>
+        <input type="text" id="ville" name="ville" required minlength="1">
+        <br>
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+      
+        <input type="submit" value="Envoyer">
+      </form>
+      
+</body>
+</html>
