@@ -11,11 +11,11 @@
         nb1 = parseInt(nb1);
         var nb2 = window.prompt("Veuillez marquer un nombre ");
         nb2 = parseInt(nb2);
-        var op = window.prompt("saisissez l'opération demandé :" + "\n" + "(1 -> addition,2 -> soustraction, 3* -> multiplication, 4/ -> division) ");
-        op = parseInt(op);
+        var op = window.prompt("saisissez l'opération demandé :" + "\n" + "(1 -> addition,2 -> soustraction, 3 -> multiplication, 4 -> division) ");
+        op =JSON(op);
         var res;
-        if (op < 1 || op > 4) {
-            alert("Erreur maggle, veuillez choisir entre 1 à 4 (ex: 1= addition)");
+        if (op < 1  || op > 4) {
+            alert("Erreur maggle, veuillez choisir entre 1 à 4 (ex: + = addition)");
             location.reload();
         }
         else {
