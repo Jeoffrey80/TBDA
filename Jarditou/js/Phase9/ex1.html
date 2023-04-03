@@ -12,7 +12,9 @@
 function produit(x, y) {
   return x * y;
 }
-
+function cube(z){
+  return z*z*z;
+}
 // Fonction afficheImg qui affiche une image à partir de son chemin
 function afficheImg(image) {
   // Crée un élément <img> dans le DOM
@@ -28,9 +30,11 @@ function afficheImg(image) {
 // Exemple d'utilisation des fonctions
 const x =window.prompt("Entrez un nombre : ");
 const y =window.prompt("entrez le multiplicateur : ");
+const z =x;
 const produitXY = produit(x, y);
+const cubez =cube(z);
 document.write("<br>"+`Le produit de ${x} et ${y} est ${produitXY}` + "<br>");
-
+document.write("<br>"+`Le cube de ${z} est ${cubez}` + "<br>");
 const image = "/Jarditou/js/Phase9/img/papillon.jpg";
 afficheImg(image);
 </script>
