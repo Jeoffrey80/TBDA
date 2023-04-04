@@ -76,21 +76,14 @@
           <input type="text" id="codepostal" name="codepostal">
         </div>
         <div>
-          <label for="adresse">Adresse:</label>
+          <label for="adresse">Adresse:*</label>
           <input type="text" id="adresse" name="adresse">
         </div>
         <div>
-          <label for="ville">Ville:</label>
+          <label for="ville">Ville:*</label>
           <input type="text" id="ville" name="ville">
         </div>
-        <div>
-
-          * Ces zones sont obligatoires
-          Vos coordonées
-          Votre nom* :
-          Votre prénom* :
-          Sexe*: Masculin Féminin
-          Date de naissance*: 
+        <div> 
           <label for="email">Email*:</label>
           <input type="text" id="email" placeholder="totodutoto@mail.fr" name="email">
         </div>
@@ -155,7 +148,8 @@
     const email = document.getElementById("email").value;
     var regexEmail=/\S+@\S+\.\S+/;
     masculinRadio.required= true;
-    femininRadio.required=false
+    femininRadio.required=false;
+
     if(nom.length < 1){
       alert("Veuillez marquer votre nom de famille (obligatoire!)");
       return false;
