@@ -1,0 +1,25 @@
+body {
+    background-image: url('/ProjetPerso/img/pokemon-poke-balls-wet-wallpaper-preview.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .acceuil{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:bolder;
+    background-color: black;
+    color: white;
+    border: 10%;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+  }
+
+  .Titre{
+    text-align: center;
+    color:maroon;
+  }
+
+  .histoire{
+    background-color: bisque;
+  }

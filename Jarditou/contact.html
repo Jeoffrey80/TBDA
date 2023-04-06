@@ -48,7 +48,7 @@
       <h1><b>Contact</b></h1> <!--Début du formulaire de contact-->
       <p><i><small>* Ces zones sont obligatoires</small></i></p>
       <form method="post" action="formulaire.php" onsubmit="return validerFormulaire();"
-      oninvalid="alert('Veuillez sélectionner votre sexe.')">
+        oninvalid="alert('Veuillez sélectionner votre sexe.')">
 
 
         <small>Vos coordonées</small>
@@ -83,7 +83,7 @@
           <label for="ville">Ville:*</label>
           <input type="text" id="ville" name="ville">
         </div>
-        <div> 
+        <div>
           <label for="email">Email*:</label>
           <input type="text" id="email" placeholder="totodutoto@mail.fr" name="email">
         </div>
@@ -92,7 +92,7 @@
           <label for="couleur">Sujet*</label>
           <select id="couleur">
             <option value="Veuillez sélectioner un sujet" selected>Veuillez sélectionner un sujet</option>
-            <option value="Commande" >Mes commandes</option>
+            <option value="Commande">Mes commandes</option>
             <option value="Qproduit">Question sur un produit</option>
             <option value="Reclamation">Réclamation</option>
             <option value="Autre">Autres</option>
@@ -104,14 +104,14 @@
           </div>
           <p></p>
         </fieldset>
-      
 
-      <p></p><input type="checkbox" required>
-      * J'accepte le traitement informatique de ce formulaire</p>
-      <input type="submit" value="Envoyer">
-      <button type="button" onclick="resetForm()">Effacer</button>
+
+        <p><input type="checkbox" required>
+          * J'accepte le traitement informatique de ce formulaire</p>
+        <input type="submit" value="Envoyer">
+        <button type="button" onclick="resetForm()">Effacer</button>
     </div><!--fin de div gauche-->
-</form>
+    </form>
     <div class="droite"><!--Début de Div droite-->
       <aside><!-- début de la balise aside -->
         <h2>Colonne de Droite</h2>
@@ -135,62 +135,62 @@
       </ul><!--fin de ul menu-->
     </nav>
   </footer><!--fin de la balise du footer-->
-<script>
-  function validerFormulaire(){
-    const nom = document.getElementById("nom").value;
-    const prenom = document.getElementById("prenom").value;
-    const masculinRadio = document.getElementById("masculin").value;
-    const femininRadio = document.getElementById("feminin").value;
-    const date = document.getElementById("date").value;
-    const codepostal = document.getElementById("codepostal").value;
-    const adresse = document.getElementById("adresse").value;
-    const ville = document.getElementById("ville").value;
-    const email = document.getElementById("email").value;
-    var regexEmail=/\S+@\S+\.\S+/;
-    masculinRadio.required= true;
-    femininRadio.required=false;
+  <script>
+    function validerFormulaire() {
+      const nom = document.getElementById("nom").value;
+      const prenom = document.getElementById("prenom").value;
+      const masculinRadio = document.getElementById("masculin").value;
+      const femininRadio = document.getElementById("feminin").value;
+      const date = document.getElementById("date").value;
+      const codepostal = document.getElementById("codepostal").value;
+      const adresse = document.getElementById("adresse").value;
+      const ville = document.getElementById("ville").value;
+      const email = document.getElementById("email").value;
+      var regexEmail = /\S+@\S+\.\S+/;
+      masculinRadio.required = true;
+      femininRadio.required = false;
 
-    if(nom.length < 1){
-      alert("Veuillez marquer votre nom de famille (obligatoire!)");
-      return false;
-    }
+      if (nom.length < 1) {
+        alert("Veuillez marquer votre nom de famille (obligatoire!)");
+        return false;
+      }
 
-    if (prenom.length <1){
-      alert("Veuillez marquer votre prénom (obligatoire!)");
-      return false;
-    }
+      if (prenom.length < 1) {
+        alert("Veuillez marquer votre prénom (obligatoire!)");
+        return false;
+      }
 
-    if(date.length == false){
-      alert("Veuillez entrer votre année de naissance (obligatoire!)");
-      return false;
-    }
+      if (date.length == false) {
+        alert("Veuillez entrer votre année de naissance (obligatoire!)");
+        return false;
+      }
 
-    if(codepostal.length != 5){
-      alert("Veuillez marquer votre code postale ! il ne doit y avoir que 5 caractère (obligatoire!)");
-      return false;
-    }
+      if (codepostal.length != 5) {
+        alert("Veuillez marquer votre code postale ! il ne doit y avoir que 5 caractère (obligatoire!)");
+        return false;
+      }
 
-    if(adresse.length <1){
-      alert("Veuillez marquer votre adresse (obligatoire!)");
-      return false;
-    }
+      if (adresse.length < 1) {
+        alert("Veuillez marquer votre adresse (obligatoire!)");
+        return false;
+      }
 
-    if(ville.length <1){
-      alert("Veuillez marquer votre ville (obligatoire!)");
-      return false;
-    }
+      if (ville.length < 1) {
+        alert("Veuillez marquer votre ville (obligatoire!)");
+        return false;
+      }
 
-    if(!regexEmail.test(email)){
-      alert("L'e-mail doit comporter au moins le caractère @. (obligatoire!)");
-      return false;
+      if (!regexEmail.test(email)) {
+        alert("L'e-mail doit comporter au moins le caractère @. (obligatoire!)");
+        return false;
+      }
+      return true;
     }
-     return true;
-  }
-  const form = document.querySelector('form');
-  function resetForm(){
-    form.reset();
-}
-</script>
+    const form = document.querySelector('form');
+    function resetForm() {
+      form.reset();
+    }
+  </script>
 
 </body>
 
