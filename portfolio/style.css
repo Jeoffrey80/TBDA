@@ -41,7 +41,7 @@ header{
 .navbar.sticky{
     position: fixed;
     width: 100%;
-    background-color: aquamarine;
+    background-color: rgb(57, 73, 68);
     display: flex;
     justify-content: space-between;
     align-items: center;
